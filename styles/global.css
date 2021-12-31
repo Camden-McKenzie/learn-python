@@ -1,3 +1,9 @@
+:root {
+  --main-body-font:  Roboto, Noto, sans-serif;
+  --main-code-font: Roboto Mono, Consolas, Menlo, monospace;
+}
+
+
 html,
 body {
   padding: 0;

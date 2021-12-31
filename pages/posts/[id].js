@@ -2,6 +2,7 @@ import Layout from '../../components/layout'
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import Head from 'next/head'
 import Date from '../../components/date'
+import Notebook from '../../components/notebook'
 import utilStyles from '../../styles/utils.module.css'
 
 export default function Post({ postData }) {
@@ -11,12 +12,7 @@ export default function Post({ postData }) {
         <title>{postData.id}</title>
       </Head>
       <article>
-        <h1 className={utilStyles.lightText}>{postData.post.cells[0].cell_type}</h1>
-        <h1 className={utilStyles.lightText}>{postData.fileContents}</h1>
-        <div className={utilStyles.lightText}>
-          <Date dateString='Hello' />
-        </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <Notebook postData={postData} />
       </article>
     </Layout>
   )
