@@ -1,18 +1,18 @@
 import styles from './notebook.module.css'
 import SyntaxHighlighter from 'react-syntax-highlighter';
+import ReactMarkdown from 'react-markdown';
 
 export default function Notebook({ postData }) {
 
   return (
     postData.notebook.cells.map(function (cell) {
+
       switch (cell.cell_type) {
         case "markdown":
           return (
             <div className={styles.Cell}>
               <div className={styles.Markdown}>
-                <div className={styles.Source}>
-                  {cell.source.join('')}
-                </div>
+                <ReactMarkdown children={cell.source.join('')} />
               </div>
             </div>
           )
