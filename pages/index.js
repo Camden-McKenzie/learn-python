@@ -3,7 +3,6 @@ import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
-import Date from '../components/date'
 
 export default function Home({ allPostsData }) {
   return (
@@ -11,7 +10,7 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+      <section className={utilStyles.headingMd}>
         <h2 className={utilStyles.headingLg}>Table of Contents</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, title, subtitle }) => (
