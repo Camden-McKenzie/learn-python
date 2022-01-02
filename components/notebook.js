@@ -1,4 +1,4 @@
-import styles from './notebook.module.css'
+import styles from './styles/notebook.module.css'
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import ReactMarkdown from 'react-markdown';
 
@@ -18,7 +18,6 @@ export default function Notebook({ postData }) {
           )
 
         case "code":
-          console.log(cell.outputs[0].text)
           return (
             <div className={styles.Cell}>
               <div className={styles.Code}>

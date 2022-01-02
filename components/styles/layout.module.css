@@ -1,0 +1,29 @@
+.container {
+  margin: 0 auto 6rem;
+}
+
+.contentContainer {
+  max-width: 36rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0 1rem;
+}
+
+.headerContainer{
+  width: 100vw;
+  background: rgb(126,175,217);
+  /* background: linear-gradient(45deg, rgba(126,175,217,1) 0%, rgba(255,243,206,1) 78%); */
+}
+
+.backToHome {
+  margin: 3rem 0 0;
+}
+
+
+

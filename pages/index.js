@@ -11,15 +11,12 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p> A modern introduction to Python3 notebooks.</p>
-      </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Exercises</h2>
+        <h2 className={utilStyles.headingLg}>Table of Contents</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, title, subtitle }) => (
             <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
+              <Link href={`content/python/${id}`}>
                 <a>{title} - {subtitle}</a>
               </Link>
             </li>
