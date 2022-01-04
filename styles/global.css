@@ -1,6 +1,20 @@
 :root {
   --main-body-font:  Roboto, Noto, sans-serif;
   --main-code-font: Roboto Mono, Consolas, Menlo, monospace;
+
+  /* Colors */
+  --background-color: var(--color1);
+  --header-color: var(--color3);
+  --button-color: var(--color5);
+  --hover-color: var(--color2);
+  --light-text: #FFFFFF;
+
+  /* Palette */
+  --color1: #f5e0b7;
+  --color2: #d6ba73;
+  --color3: #8bbf9f;
+  --color4: #275dad;
+  --color5: #424b54;
 }
 
 
@@ -11,7 +25,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 * {

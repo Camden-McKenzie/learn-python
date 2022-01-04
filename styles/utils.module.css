@@ -53,12 +53,15 @@
 
 .title{
   font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--light-text);
 }
 
 .subtitle{
   font-style: italic;
   font-weight: normal;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  color: var(--light-text);
 }
 
 .centerText{
